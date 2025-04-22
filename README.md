@@ -19,7 +19,7 @@ This assignment consists of 4 parts in total, each specified separately and has 
 
 Before starting, ensure that you have the following installed:
 
-* [Python 3.7+](https://www.python.org/downloads/) (Make sure python and pip are available in your terminal)
+* [Python 3.7+](https://www.python.org/downloads/) (Make sure python (`python --version` or `python3 --version`) and pip (`python -m pip --version` or `python3 -m pip --version`) are available in your terminal)
 * [Git](https://git-scm.com/downloads) (optional, for version control)
 
 #### Setting Up the Development Environment
