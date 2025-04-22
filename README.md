@@ -115,7 +115,7 @@ Once your virtual environment is set up, you can run task code.
 </details>
 
 
-<!-- <details> -->
+<details>
 
 <summary><h4 style="display: inline-block; word-break: break-all;">Assignment 1 - Cached fibonacci using closure</h4></summary>
 
