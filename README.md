@@ -112,7 +112,7 @@ Once your virtual environment is set up, you can run task code.
 
 <details>
 
-<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 1 - Cached fibonacci using closure</h3></summary>
+<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 1 - Calculate fibonacci number</h3></summary>
 
 #### Task description:
 
@@ -141,6 +141,12 @@ Result screenshot - no issues using argument value:
 
 <p align="center">
   <img align="left" src="./assets/results/task_1_result_no_issues_arg_value.png" title="task 1 screenshot no issues" alt="result screenshot">
+</p>
+
+Result screenshot - cache & no cache time comparation:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_1_result_cache_no_cache_time_compare.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
 .
 

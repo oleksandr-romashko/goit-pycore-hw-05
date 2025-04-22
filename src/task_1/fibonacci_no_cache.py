@@ -1,9 +1,6 @@
 """
-This module implements a recursive Fibonacci number generator with caching
-(memoization) using closures.
-
-The implementation is based on lexical scoping principles (closures), where
-the inner function maintains access to the cache defined in the outer function.
+This module implements a recursive Fibonacci number generator.
+No caching (memoization) is used.
 
 Example:
     fib = caching_fibonacci()
@@ -14,25 +11,18 @@ import sys
 import time
 
 
-def caching_fibonacci():
+def no_caching_fibonacci():
     """
-    Returns a Fibonacci function with internal caching.
-
-    The returned function computes the n-th Fibonacci number using recursion,
-    storing previously computed results in a cache to avoid redundant
-    calculations.
+    Returns a Fibonacci function without caching.
 
     Returns:
         function: A function that takes an integer n and returns the n-th
                   Fibonacci number.
     """
-    # Dictionary used to store cached values in a key-value form
-    cache = {}
 
     def fibonacci(n: int) -> int:
         """
-        Computes the n-th Fibonacci number using a recursive approach
-        with caching.
+        Computes the n-th Fibonacci number using a recursive approach.
 
         Args:
             n (int): The position in the Fibonacci sequence.
@@ -47,7 +37,6 @@ def caching_fibonacci():
         Notes:
             - For n <= 0, the function returns 0.
             - For n == 1, the function returns 1.
-            - Uses a closure to persist cache across recursive calls.
         """
 
         # Base recursion cases
@@ -57,14 +46,10 @@ def caching_fibonacci():
         if n == 1:
             return 1
 
-        # Retrieve previously calculated cached value, if any
-        if n in cache:
-            return cache[n]
-
-        # Calculate new value and cache it
+        # Calculate new value
         try:
-            cache[n] = fibonacci(n - 1) + fibonacci(n - 2)
-            return cache[n]
+            n = fibonacci(n - 1) + fibonacci(n - 2)
+            return n
         except RecursionError as exc:
             # Handle case when calculation exceeds recursion depth limit
             raise ValueError(
@@ -80,7 +65,7 @@ if __name__ == "__main__":
     # Tests
     print(f"Running tests for {__file__}...")
 
-    fib = caching_fibonacci()
+    fib = no_caching_fibonacci()
     assert fib(-5) == 0
     assert fib(0) == 0
     assert fib(1) == 1
@@ -101,7 +86,7 @@ if __name__ == "__main__":
     start = time.time()
     fib(time_test_number)
     print(
-        f"Test time with internal dict cache for number {time_test_number} is: {time.time() - start} seconds"
+        f"Test time without cache for number {time_test_number} is: {time.time() - start} seconds"
     )
 
     print("✅ All tests passed successfully.")
