@@ -84,7 +84,7 @@ Once your virtual environment is set up, you can run task code.
   Run task 1:
 
   ```bash
-  python src/task_1/main.py
+  python src/task_1/main.py [N]
   ```
 
 * **Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
@@ -93,7 +93,7 @@ Once your virtual environment is set up, you can run task code.
 
     Run task 1 with the script:
     ```bash
-    ./src/task_1/run_task_1.sh
+    ./src/task_1/run_task_1.sh [N]
     ```
 
     Make sure the shell scripts have execution permission by running:
@@ -131,10 +131,16 @@ This task can be solved recursively, by calling a function that calculates Fibon
 Solution for this task is located in the following files:
 * [./src/task_1/main.py](./src/task_1/main.py) - main entry point file.
 
-Result screenshot - file with no issues:
+Result screenshot - no issues with default examples:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_1_result_no_issues.png" title="task 1 screenshot no issues" alt="result screenshot">
+  <img align="left" src="./assets/results/task_1_result_no_issues_default_examples.png" title="task 1 screenshot no issues" alt="result screenshot">
+</p>
+
+Result screenshot - no issues using argument value:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_1_result_no_issues_arg_value.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
 .
 
