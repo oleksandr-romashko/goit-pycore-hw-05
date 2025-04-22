@@ -129,7 +129,10 @@ This task can be solved recursively, by calling a function that calculates Fibon
 #### Solution:
 
 Solution for this task is located in the following files:
-* [./src/task_1/main.py](./src/task_1/main.py) - main entry point file.
+* [src/task_1/main.py](./src/task_1/main.py) - main entry point file.
+* [src/task_1/fibonacci.py](./src/task_1/fibonacci.py) - task solution with Fibonacci number calculation
+* [src/task_1/fibonacci_no_cache.py](./src/task_1/fibonacci_no_cache.py) - task solution with no cache calculation (for compare)
+* [src/task_1/fibonacci_functools.py](./src/task_1/fibonacci_functools.py) - alternative task solution using embedded functools.cache cache
 
 Result screenshot - no issues with default examples:
 
