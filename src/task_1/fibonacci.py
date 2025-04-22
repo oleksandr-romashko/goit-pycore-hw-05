@@ -25,6 +25,7 @@ def caching_fibonacci():
         function: A function that takes an integer n and returns the n-th
                   Fibonacci number.
     """
+    # Dictionary used to store cached values in a key-value form
     cache = {}
 
     def fibonacci(n: int) -> int:
@@ -55,7 +56,7 @@ def caching_fibonacci():
         if n == 1:
             return 1
 
-        # Retrieve previously calculated cached value
+        # Retrieve previously calculated cached value, if any
         if n in cache:
             return cache[n]
 
