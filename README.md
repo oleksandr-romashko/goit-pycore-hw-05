@@ -13,7 +13,7 @@ This assignment consists of 4 parts in total, each specified separately and has 
 
 <details>
 
-<summary><h4 style="display: inline-block">Project Setup & Run Instructions</h4></summary>
+<summary><h3 style="display: inline-block">Project Setup & Run Instructions</h3></summary>
 
 #### Prerequisites
 
@@ -112,7 +112,7 @@ Once your virtual environment is set up, you can run task code.
 
 <details>
 
-<summary><h4 style="display: inline-block; word-break: break-all;">Assignment 1 - Cached fibonacci using closure</h4></summary>
+<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 1 - Cached fibonacci using closure</h3></summary>
 
 #### Task description:
 
