@@ -11,20 +11,18 @@
 
 This assignment consists of 4 parts in total, each specified separately and has a link to the solution file.
 
-<details>
+<!-- <details> -->
 
 <summary><h4 style="display: inline-block">Project Setup & Run Instructions</h4></summary>
 
-
-##### Prerequisites
+#### Prerequisites
 
 Before starting, ensure that you have the following installed:
 
 * Python 3.7+ (Make sure python and pip are available in your terminal)
 * Git (optional, for version control)
 
-
-##### Setting Up the Development Environment
+#### Setting Up the Development Environment
 
 1. **Clone (or copy) the Repository**
 
@@ -36,7 +34,6 @@ Before starting, ensure that you have the following installed:
     ```
 
     or download zip archive with code directly [from the repository](https://github.com/oleksandr-romashko/goit-pycore-hw-04/archive/refs/heads/main.zip).
-
 
 2. **Create a Virtual Environment**
 
@@ -71,7 +68,6 @@ Before starting, ensure that you have the following installed:
 #### Running the Project
 
 Once your virtual environment is set up, you can run task code.
-
 
 * **Running the Tasks in VS Code**
 
@@ -114,11 +110,9 @@ Once your virtual environment is set up, you can run task code.
 
 </details>
 
-
 <details>
 
 <summary><h4 style="display: inline-block; word-break: break-all;">Assignment 1 - Cached fibonacci using closure</h4></summary>
-
 
 #### Task description:
 
@@ -132,7 +126,6 @@ In general, to compute the `n`-th Fibonacci number, the formula is: $F_n = F_{nâ
 
 This task can be solved recursively, by calling a function that calculates Fibonacci numbers until it reaches the base cases `n = 0` or `n = 1`.
 
-
 #### Solution:
 
 Solution for this task is located in the following files:
@@ -145,14 +138,12 @@ Result screenshot - file with no issues:
 </p>
 .
 
-
 #### Task requirements:
 
 1. The `caching_fibonacci()` function must return an inner function `fibonacci(n)`.
 2. The `fibonacci(n)` function computes the `n`-th Fibonacci number. If the value is already cached, it should return the cached result.
 3. If the value is not in the cache, it should compute it, store it in the cache, and return the result.
 4. Use recursion to compute Fibonacci numbers.
-
 
 #### Recommendations to the implementation:
 
@@ -176,13 +167,11 @@ END FUNCTION
 
 The `caching_fibonacci` function creates an inner function `fibonacci` and a `cache` dictionary to store computed Fibonacci numbers. Each time `fibonacci(n)` is called, it first checks whether the `n`-th result is already stored in `cache`. If it is, it returns the cached result immediately, greatly reducing the number of recursive calls. If not, it computes the result recursively, stores it in the `cache`, and returns it. The `caching_fibonacci` function returns the `inner` fibonacci function, which can now be used to compute Fibonacci numbers efficiently using caching.
 
-
 #### Evaluation criteria:
 
 1. Correct implementation of the `fibonacci(n)` function with cache usage.
 2. Efficient use of recursion and caching to optimize computation.
 3. Code clarity, including readability and use of comments.
-
 
 #### Usage example:
 
