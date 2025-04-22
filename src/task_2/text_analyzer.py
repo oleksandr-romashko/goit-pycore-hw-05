@@ -21,5 +21,5 @@ def generator_numbers(text: str) -> Iterator[float]:
     pattern = re.compile(r"\b\d+(?:\.\d+)?\b")
 
     # Find all matches in the text and yield them as float
-    for match in re.finditer(pattern, text):
+    for match in pattern.finditer(text):
         yield float(match.group())
