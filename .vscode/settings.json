@@ -3,5 +3,6 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}/src",
         "${workspaceFolder}/src/task_1",
+        "${workspaceFolder}/src/task_2",
     ]
 }

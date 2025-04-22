@@ -202,3 +202,60 @@ print(fib(15))  # Outputs 610
 In this example, calling `fib(10)` or `fib(15)` will compute the corresponding Fibonacci numbers using the `fibonacci` function inside `caching_fibonacci`, storing previously computed results in a cache. This makes repeated calls for the same values of `n` much faster, since the results are simply retrieved from the cache. The closure allows `fibonacci(n)` to "remember" the cache between different calls, which is key to caching the computation results.
 
 </details>
+
+<details>
+
+<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 2 - Calculate profit using numbers from text</h3></summary>
+
+#### Task description:
+
+Create a function `generator_numbers` that will analyze a text, identify all real numbers that are considered parts of income, and return them as a generator. The real numbers in the text are correctly written and clearly separated by spaces on both sides.
+
+Also implement a function `sum_profit` that will use `generator_numbers` to sum these numbers and calculate the total profit.
+
+#### Solution:
+
+Solution for this task is located in the following files:
+* [./src/task_2/main.py](./src/task_1/main.py) - main entry point file.
+* [src/task_2/text_analyzer.py](./src/task_2/text_analyzer.py) - analyzes text for profit values.
+* [src/task_2/profit_calculator.py](./src/task_2/profit_calculator.py) - calculates profit.
+
+Result screenshot - no issues with default example:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_2_result_no_issues_default_examples.png" title="task 2 screenshot no issues" alt="result screenshot">
+</p>
+.
+
+#### Task requirements:
+
+1. The function `generator_numbers(text: str)` must accept a string as an argument and return a generator that iterates over all real numbers in the text. The real numbers are assumed to be correctly written and clearly separated by spaces on both sides.
+2. The function `sum_profit(text: str, func: Callable)` must use the `generator_numbers` generator to compute the total sum of numbers in the input string and should accept it as an argument when called.
+
+#### Recommendations to the implementation:
+
+1. Use regular expressions to identify real numbers in the text, considering that the numbers are clearly separated by spaces.
+2. Use the `yield` keyword in the `generator_numbers` function to create a generator.
+3. Ensure that `sum_profit` correctly processes the data from `generator_numbers` and sums all the numbers.
+
+#### Evaluation criteria:
+
+1. Correct detection and return of real numbers by the `generator_numbers` function.
+2. Correct computation of the total sum in the `sum_profit` function.
+3. Clean code, use of comments, and adherence to PEP8 coding style.
+
+#### Usage example:
+
+```python
+text = "The total income of the employee consists of several parts: 1000.01 as base income, supplemented by additional receipts of 27.45 and 324.00 dollars."
+total_income = sum_profit(text, generator_numbers)
+print(f"Total income: {total_income}")
+```
+
+Expected output:
+
+```bash
+Total income: 1351.46
+```
+
+</details>
