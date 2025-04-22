@@ -11,7 +11,7 @@
 
 This assignment consists of 4 parts in total, each specified separately and has a link to the solution file.
 
-<!-- <details> -->
+<details>
 
 <summary><h4 style="display: inline-block">Project Setup & Run Instructions</h4></summary>
 
