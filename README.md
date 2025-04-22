@@ -30,7 +30,7 @@ Before starting, ensure that you have the following installed:
 
     ```bash
     git clone https://github.com/oleksandr-romashko/goit-pycore-hw-05.git
-    cd goit-pycore-hw-04
+    cd goit-pycore-hw-05
     ```
 
     or download zip archive with code directly [from the repository](https://github.com/oleksandr-romashko/goit-pycore-hw-04/archive/refs/heads/main.zip).
