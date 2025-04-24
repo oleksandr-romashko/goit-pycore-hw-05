@@ -241,7 +241,7 @@ Solution for this task is located in the following files:
 
 Result screenshot - no issues with default example:
 
-<img style="display:block" align="left" src="./assets/results/task_2_result_no_issues_default_examples.png" title="task 2 screenshot no issues" alt="result screenshot">
+![](./assets/results/task_2_result_no_issues_default_examples.png)
 
 #### <a name="assignment-2-task-requirements"></a>Task requirements:
 
@@ -322,19 +322,19 @@ Solution for this task is located in the following files:
 
 Result screenshot - default example:
 
-<img style="display:block" align="left" src="./assets/results/task_3_default_example.png" title="task 2 screenshot default example" alt="result screenshot">
+![](./assets/results/task_3_default_example.png)
 
 Result screenshot - filtered by level:
 
-<img style="display:block" align="left" src="./assets/results/task_3_filtered_by_level.png" title="task 2 screenshot filtered by level example" alt="result screenshot">
+![](./assets/results/task_3_filtered_by_level.png)
 
 Result screenshot - showing issues:
 
-<img align="left" src="./assets/results/task_3_showing_issues.png" title="task 2 screenshot showing issues example" alt="result screenshot">
+![](./assets/results/task_3_showing_issues.png)
 
 Result screenshot - unknown levels as issues:
 
-<img style="display:block" align="left" src="./assets/results/task_3_unknown_levels_as_issues.png" title="task 2 screenshot unknown levels as issues example" alt="result screenshot">
+![](./assets/results/task_3_unknown_levels_as_issues.png)
 
 #### Task requirements:
 
