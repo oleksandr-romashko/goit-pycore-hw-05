@@ -155,19 +155,19 @@ Solution for this task is located in the following files:
 Result screenshot - no issues with default examples:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_1_result_no_issues_default_examples.png" title="task 1 screenshot no issues" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_1_result_no_issues_default_examples.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
 
 Result screenshot - no issues using argument value:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_1_result_no_issues_arg_value.png" title="task 1 screenshot no issues" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_1_result_no_issues_arg_value.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
 
 Result screenshot - cache & no cache time comparation:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_1_result_cache_no_cache_time_compare.png" title="task 1 screenshot no issues" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_1_result_cache_no_cache_time_compare.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
 
 #### Task requirements:
@@ -248,9 +248,8 @@ Solution for this task is located in the following files:
 Result screenshot - no issues with default example:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_2_result_no_issues_default_examples.png" title="task 2 screenshot no issues" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_2_result_no_issues_default_examples.png" title="task 2 screenshot no issues" alt="result screenshot">
 </p>
-.
 
 #### <a name="assignment-2-task-requirements"></a>Task requirements:
 
@@ -332,13 +331,13 @@ Solution for this task is located in the following files:
 Result screenshot - default example:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_3_default_example.png" title="task 2 screenshot default example" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_3_default_example.png" title="task 2 screenshot default example" alt="result screenshot">
 </p>
 
 Result screenshot - filtered by level:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_3_filtered_by_level.png" title="task 2 screenshot filtered by level example" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_3_filtered_by_level.png" title="task 2 screenshot filtered by level example" alt="result screenshot">
 </p>
 
 Result screenshot - showing issues:
@@ -350,7 +349,7 @@ Result screenshot - showing issues:
 Result screenshot - unknown levels as issues:
 
 <p align="center">
-  <img align="left" src="./assets/results/task_3_unknown_levels_as_issues.png" title="task 2 screenshot unknown levels as issues example" alt="result screenshot">
+  <img style="display:block" align="left" src="./assets/results/task_3_unknown_levels_as_issues.png" title="task 2 screenshot unknown levels as issues example" alt="result screenshot">
 </p>
 .
 
