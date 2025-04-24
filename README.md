@@ -16,25 +16,25 @@ This assignment consists of 4 parts in total, each specified separately and has 
 <summary><h3 style="display: inline-block">Project Setup & Run Instructions</h3></summary>
 
 ##### Table of Contents
-- [Prerequisites](#prerequisites)
-- [Setting Up the Development Environment](#setting-up-the-development-environment)
-  - Clone the Repository
-  - Create a Virtual Environment
-- [Running the Project](#running-the-project)
-  - Running the Tasks in VS Code
-  - Running the Tasks from the Command Line
-  - Running Tasks with Scripts
+- [Prerequisites](#setup-prerequisites)
+- [Setting Up the Development Environment](#setup-setting-up-environment)
+  - [Clone the Repository](#setup-clone-repository)
+  - [Create a Virtual Environment](#setup-create-virtual-environment)
+- [Running the Project](#setup-running-the-project)
+  - [Running the Tasks in VS Code](#setup-running-vs-code)
+  - [Running the Tasks from the Command Line](#setup-running-command-line)
+  - [Running Tasks with Scripts](#setup-running-script)
 
-#### Prerequisites
+#### <a name="setup-prerequisites"></a>Prerequisites
 
 Before starting, ensure that you have the following installed:
 
 * [Python 3.7+](https://www.python.org/downloads/) (Make sure python (`python --version` or `python3 --version`) and pip (`python -m pip --version` or `python3 -m pip --version`) are available in your terminal)
 * [Git](https://git-scm.com/downloads) (optional, for version control)
 
-#### Setting Up the Development Environment
+#### <a name="setup-setting-up-environment"></a>Setting Up the Development Environment
 
-1. **Clone (or copy) the Repository**
+1. **<a name="setup-clone-repository"></a>Clone (or copy) the Repository**
 
     If you haven't cloned the project yet, you can do so using:
 
@@ -45,7 +45,7 @@ Before starting, ensure that you have the following installed:
 
     or download zip archive with code directly [from the repository](https://github.com/oleksandr-romashko/goit-pycore-hw-04/archive/refs/heads/main.zip).
 
-2. **Create a Virtual Environment**
+2. **<a name="setup-create-virtual-environment"></a>Create a Virtual Environment**
 
     * **Linux/macOS (using `bash` or `zsh`):**
 
@@ -75,17 +75,17 @@ Before starting, ensure that you have the following installed:
       * Set the `PYTHONPATH` for module imports.
 
 
-#### Running the Project
+#### <a name="setup-running-the-project"></a>Running the Project
 
 Once your virtual environment is set up, you can run task code.
 
-* **Running the Tasks in VS Code**
+* **<a name="setup-running-vs-code">Running the Tasks in VS Code**
 
   Once the virtual environment is activated and `PYTHONPATH` is set, you can run each of the task files directly from VS Code. Make sure that your `settings.json` (in `.vscode` folder) is correctly set up, as discussed previously.
 
   VS Code will automatically use the virtual environment and set the correct `PYTHONPATH` if you've configured your settings properly.
 
-* **Running the Tasks from the Command Line**
+* **<a name="setup-running-command-line">Running the Tasks from the Command Line**
 
   After setting up your virtual environment and setting the `PYTHONPATH`, you can run the tasks directly from the terminal.
 
@@ -97,7 +97,7 @@ Once your virtual environment is set up, you can run task code.
   python src/task_1/main.py [N]
   ```
 
-* **Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
+* **<a name="setup-running-script">Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
 
   * **On Linux/macOS (shell script)**:
 
