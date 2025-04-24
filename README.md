@@ -79,13 +79,13 @@ Before starting, ensure that you have the following installed:
 
 Once your virtual environment is set up, you can run task code.
 
-* **<a name="setup-running-vs-code">Running the Tasks in VS Code**
+* **<a name="setup-running-vs-code"></a>Running the Tasks in VS Code**
 
   Once the virtual environment is activated and `PYTHONPATH` is set, you can run each of the task files directly from VS Code. Make sure that your `settings.json` (in `.vscode` folder) is correctly set up, as discussed previously.
 
   VS Code will automatically use the virtual environment and set the correct `PYTHONPATH` if you've configured your settings properly.
 
-* **<a name="setup-running-command-line">Running the Tasks from the Command Line**
+* **<a name="setup-running-command-line"></a>Running the Tasks from the Command Line**
 
   After setting up your virtual environment and setting the `PYTHONPATH`, you can run the tasks directly from the terminal.
 
@@ -97,7 +97,7 @@ Once your virtual environment is set up, you can run task code.
   python src/task_1/main.py [N]
   ```
 
-* **<a name="setup-running-script">Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
+* **<a name="setup-running-script"></a>Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
 
   * **On Linux/macOS (shell script)**:
 
