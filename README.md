@@ -131,7 +131,6 @@ Once your virtual environment is set up, you can run task code.
 - [Recommendations](#recommendations-to-the-implementation)
 - [Evaluation Criteria](#evaluation-criteria)
 - [Usage Example](#usage-example)
-- [Additional Features](#additional-features)
 
 #### Task description:
 
@@ -170,7 +169,6 @@ Result screenshot - cache & no cache time comparation:
 <p align="center">
   <img align="left" src="./assets/results/task_1_result_cache_no_cache_time_compare.png" title="task 1 screenshot no issues" alt="result screenshot">
 </p>
-.
 
 #### Task requirements:
 
@@ -226,14 +224,13 @@ In this example, calling `fib(10)` or `fib(15)` will compute the corresponding F
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 2 - Calculate profit using numbers from text</h3></summary>
 
-#### Table of Contents
+#### Table of Contents for Assignment 2
 - [Task Description](#assignment-2-task-description)
 - [Solution](#assignment-2-solution)
 - [Task Requirements](#assignment-2-task-requirements)
 - [Recommendations](#assignment-2-recommendations-to-the-implementation)
 - [Evaluation Criteria](#assignment-2-evaluation-criteria)
 - [Usage Example](#assignment-2-usage-example)
-- [Additional Features](#assignment-2-additional-features)
 
 #### <a name="assignment-2-task-description"></a>Task description:
 
