@@ -15,6 +15,16 @@ This assignment consists of 4 parts in total, each specified separately and has 
 
 <summary><h3 style="display: inline-block">Project Setup & Run Instructions</h3></summary>
 
+##### Table of Contents
+- [Prerequisites](#prerequisites)
+- [Setting Up the Development Environment](#setting-up-the-development-environment)
+  - Clone the Repository
+  - Create a Virtual Environment
+- [Running the Project](#running-the-project)
+  - Running the Tasks in VS Code
+  - Running the Tasks from the Command Line
+  - Running Tasks with Scripts
+
 #### Prerequisites
 
 Before starting, ensure that you have the following installed:
@@ -114,6 +124,15 @@ Once your virtual environment is set up, you can run task code.
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 1 - Calculate fibonacci number</h3></summary>
 
+#### Table of Contents
+- [Task Description](#task-description)
+- [Solution](#solution)
+- [Task Requirements](#task-requirements)
+- [Recommendations](#recommendations-to-the-implementation)
+- [Evaluation Criteria](#evaluation-criteria)
+- [Usage Example](#usage-example)
+- [Additional Features](#additional-features)
+
 #### Task description:
 
 **Closures** in programming are functions that retain references to variables from their lexical scope — that is, from the context in which they were declared.
@@ -207,16 +226,25 @@ In this example, calling `fib(10)` or `fib(15)` will compute the corresponding F
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 2 - Calculate profit using numbers from text</h3></summary>
 
-#### Task description:
+#### Table of Contents
+- [Task Description](#assignment-2-task-description)
+- [Solution](#assignment-2-solution)
+- [Task Requirements](#assignment-2-task-requirements)
+- [Recommendations](#assignment-2-recommendations-to-the-implementation)
+- [Evaluation Criteria](#assignment-2-evaluation-criteria)
+- [Usage Example](#assignment-2-usage-example)
+- [Additional Features](#assignment-2-additional-features)
+
+#### <a name="assignment-2-task-description"></a>Task description:
 
 Create a function `generator_numbers` that will analyze a text, identify all real numbers that are considered parts of income, and return them as a generator. The real numbers in the text are correctly written and clearly separated by spaces on both sides.
 
 Also implement a function `sum_profit` that will use `generator_numbers` to sum these numbers and calculate the total profit.
 
-#### Solution:
+#### <a name="assignment-2-solution"></a>Solution:
 
 Solution for this task is located in the following files:
-* [./src/task_2/main.py](./src/task_1/main.py) - main entry point file.
+* [./src/task_2/main.py](./src/task_2/main.py) - main entry point file.
 * [src/task_2/text_analyzer.py](./src/task_2/text_analyzer.py) - analyzes text for profit values.
 * [src/task_2/profit_calculator.py](./src/task_2/profit_calculator.py) - calculates profit.
 
@@ -227,24 +255,24 @@ Result screenshot - no issues with default example:
 </p>
 .
 
-#### Task requirements:
+#### <a name="assignment-2-task-requirements"></a>Task requirements:
 
 1. The function `generator_numbers(text: str)` must accept a string as an argument and return a generator that iterates over all real numbers in the text. The real numbers are assumed to be correctly written and clearly separated by spaces on both sides.
 2. The function `sum_profit(text: str, func: Callable)` must use the `generator_numbers` generator to compute the total sum of numbers in the input string and should accept it as an argument when called.
 
-#### Recommendations to the implementation:
+#### <a name="assignment-2-recommendations-to-the-implementation"></a>Recommendations to the implementation:
 
 1. Use regular expressions to identify real numbers in the text, considering that the numbers are clearly separated by spaces.
 2. Use the `yield` keyword in the `generator_numbers` function to create a generator.
 3. Ensure that `sum_profit` correctly processes the data from `generator_numbers` and sums all the numbers.
 
-#### Evaluation criteria:
+#### <a name="assignment-2-evaluation-criteria"></a>Evaluation criteria:
 
 1. Correct detection and return of real numbers by the `generator_numbers` function.
 2. Correct computation of the total sum in the `sum_profit` function.
 3. Clean code, use of comments, and adherence to PEP8 coding style.
 
-#### Usage example:
+#### <a name="assignment-2-usage-example"></a>Usage example:
 
 ```python
 text = "The total income of the employee consists of several parts: 1000.01 as base income, supplemented by additional receipts of 27.45 and 324.00 dollars."
@@ -256,6 +284,147 @@ Expected output:
 
 ```bash
 Total income: 1351.46
+```
+
+</details>
+
+<details>
+
+<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 3 - Log Analyzer CLI Tool</h3></summary>
+
+#### Table of Contents
+- [Task Description](#task-description)
+- [Solution](#solution)
+- [Task Requirements](#task-requirements)
+- [Recommendations](#recommendations-to-the-implementation)
+- [Evaluation Criteria](#evaluation-criteria)
+- [Usage Example](#usage-example)
+- [Additional Features](#additional-features)
+
+#### Task description:
+
+Develop a Python script for analyzing log files. The script should be able to read a log file provided as a command-line argument and display statistics based on log levels such as `INFO`, `ERROR`, `DEBUG`. The user can also specify a log level as the second command-line argument to get all records of that level.
+
+Log files are files that contain records of events occurring in the operating system, software, or other systems. They help monitor and analyze system behavior, detect, and diagnose issues.
+
+To complete this task, use the following sample log file:
+
+```log
+2024-01-22 08:30:01 INFO User logged in successfully.
+2024-01-22 08:45:23 DEBUG Attempting to connect to the database.
+2024-01-22 09:00:45 ERROR Database connection failed.
+2024-01-22 09:15:10 INFO Data export completed.
+2024-01-22 10:30:55 WARNING Disk usage above 80%.
+2024-01-22 11:05:00 DEBUG Starting data backup process.
+2024-01-22 11:30:15 ERROR Backup process failed.
+2024-01-22 12:00:00 INFO User logged out.
+2024-01-22 12:45:05 DEBUG Checking system health.
+2024-01-22 13:30:30 INFO Scheduled maintenance.
+```
+
+#### Solution:
+
+Solution for this task is located in the following files:
+* [./src/task_3/main.py](./src/task_3/main.py) - main entry point file.
+
+##### Additional Features:
+
+- `--show-issues`: Display malformed log entries or unknown formats.
+- `--issue-unknown-levels`: Treat unknown log levels as issues for analysis.
+
+Result screenshot - default example:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_3_default_example.png" title="task 2 screenshot default example" alt="result screenshot">
+</p>
+
+Result screenshot - filtered by level:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_3_filtered_by_level.png" title="task 2 screenshot filtered by level example" alt="result screenshot">
+</p>
+
+Result screenshot - showing issues:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_3_showing_issues.png" title="task 2 screenshot showing issues example" alt="result screenshot">
+</p>
+
+Result screenshot - unknown levels as issues:
+
+<p align="center">
+  <img align="left" src="./assets/results/task_3_unknown_levels_as_issues.png" title="task 2 screenshot unknown levels as issues example" alt="result screenshot">
+</p>
+.
+
+#### Task requirements:
+
+1. The script must accept the path to the log file as a command-line argument.
+2. The script must accept an optional second command-line argument, following the log file path. It should display all records of a specific log level. For example, the `error` argument should output all `ERROR` level records from the log file.
+3. The script must read and analyze the log file, counting the number of records for each log level (`INFO`, `ERROR`, `DEBUG`, `WARNING`).
+4. Implement the function `parse_log_line(line: str) -> dict` for parsing a log line.
+5. Implement the function `load_logs(file_path: str) -> list` for loading logs from a file.
+6. Implement the function `filter_logs_by_level(logs: list, level: str) -> list` for filtering logs by level.
+7. Implement the function `count_logs_by_level(logs: list) -> dict` for counting records by log level.
+8. The results should be displayed in a table showing the number of records for each level. For that, implement the function `display_log_counts(counts: dict)`, which formats and outputs the results. It takes the output from `count_logs_by_level` as input.
+
+#### Recommendations to the implementation:
+
+1. Before you start, familiarize yourself with the structure of your log file. Pay attention to the date and time format, log levels like `INFO`, `ERROR`, `DEBUG`, `WARNING`, and the structure of messages.
+2. Understand how different parts of the log are separated — usually by spaces or special characters.
+3. Divide your task into logical blocks and functions for better readability and future scalability.
+4. Parsing a log line **should be done** by the function `parse_log_line(line: str) -> dict`, which takes a line from the log as input and returns a dictionary with parsed components: date, time, level, and message. Use string methods such as `split()` to break the line into parts.
+5. Loading logs from the file should be done by the function `load_logs(file_path: str) -> list`, which opens the file, reads each line, applies the `parse_log_line` function to it, and stores the results in a list.
+6. Filtering logs by level should be done by the function `filter_logs_by_level(logs: list, level: str) -> list`. This will allow you to retrieve all log entries for a specific level.
+7. Counting records by log level should be handled by the function `count_logs_by_level(logs: list) -> dict`, which iterates through all records and counts the number of entries for each log level.
+8. Displaying the results should be done using the function `display_log_counts(counts: dict)`, which formats and prints the count results in a readable form.
+9. Your script should be able to handle different types of errors, such as file not found or file reading errors. Use `try/except` blocks to handle exceptions gracefully.
+
+#### Evaluation criteria:
+
+* The script fulfills all the listed requirements, correctly analyzes the log file, and outputs the relevant information.
+* The script properly handles errors such as incorrect log file format or missing file.
+* The implementation uses at least one functional programming element: lambda function, list comprehension, `filter` function, etc.
+* The code is well-structured, readable, and contains comments where necessary.
+
+#### Usage example:
+
+When running the script:
+
+```bash
+python main.py /path/to/logfile.log
+```
+
+You should expect the following output:
+
+```bash
+| Log Level | Count |
+| --------- | ----- |
+| INFO      | 4     |
+| DEBUG     | 3     |
+| ERROR     | 2     |
+| WARNING   | 1     |
+```
+
+If the user wants to view all entries of a specific log level, they can run the script with an additional argument, for example:
+
+```bash
+python main.py path/to/logfile.log error
+```
+
+This will print the overall statistics by level, and also detailed info for all ERROR level records:
+
+```bash
+| Log Level | Count |
+| --------- | ----- |
+| INFO      | 4     |
+| DEBUG     | 3     |
+| ERROR     | 2     |
+| WARNING   | 1     |
+
+Log details for level 'ERROR':
+2024-01-22 09:00:45 - Database connection failed.
+2024-01-22 11:30:15 - Backup process failed.
 ```
 
 </details>
