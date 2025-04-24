@@ -130,7 +130,7 @@ Once your virtual environment is set up, you can run task code.
 - [Task Requirements](#assignment-1-task-requirements)
 - [Recommendations](#assignment-1-recommendations-to-the-implementation)
 - [Evaluation Criteria](#assignment-1-evaluation-criteria)
-- [Usage Example](#assignment-1-usage-example)
+- [Usage Example according to the Task](#assignment-1-usage-example)
 
 #### <a name="assignment-1-task-description"></a>Task description:
 
@@ -199,7 +199,7 @@ The `caching_fibonacci` function creates an inner function `fibonacci` and a `ca
 2. Efficient use of recursion and caching to optimize computation.
 3. Code clarity, including readability and use of comments.
 
-#### <a name="assignment-1-usage-example"></a>Usage example:
+#### <a name="assignment-1-usage-example"></a>Usage example according to the Task:
 
 ```python
 # Get the fibonacci function
@@ -224,7 +224,7 @@ In this example, calling `fib(10)` or `fib(15)` will compute the corresponding F
 - [Task Requirements](#assignment-2-task-requirements)
 - [Recommendations](#assignment-2-recommendations-to-the-implementation)
 - [Evaluation Criteria](#assignment-2-evaluation-criteria)
-- [Usage Example](#assignment-2-usage-example)
+- [Usage Example according to the Task](#assignment-2-usage-example)
 
 #### <a name="assignment-2-task-description"></a>Task description:
 
@@ -260,7 +260,7 @@ Result screenshot - no issues with default example:
 2. Correct computation of the total sum in the `sum_profit` function.
 3. Clean code, use of comments, and adherence to PEP8 coding style.
 
-#### <a name="assignment-2-usage-example"></a>Usage example:
+#### <a name="assignment-2-usage-example"></a>Usage example according to the Task:
 
 ```python
 text = "The total income of the employee consists of several parts: 1000.01 as base income, supplemented by additional receipts of 27.45 and 324.00 dollars."
@@ -286,7 +286,7 @@ Total income: 1351.46
 - [Task Requirements](#assignment-3-task-requirements)
 - [Recommendations](#assignment-3-recommendations-to-the-implementation)
 - [Evaluation Criteria](#assignment-3-evaluation-criteria)
-- [Usage Example](#assignment-3-usage-example)
+- [Usage Example according to the Task](#assignment-3-usage-example)
 
 #### <a name="assignment-3-task-description"></a>Task description:
 
@@ -365,7 +365,7 @@ Result screenshot - unknown levels as issues:
 * The implementation uses at least one functional programming element: lambda function, list comprehension, `filter` function, etc.
 * The code is well-structured, readable, and contains comments where necessary.
 
-#### <a name="assignment-3-usage-example"></a>Usage example:
+#### <a name="assignment-3-usage-example"></a>Usage example according to the Task:
 
 When running the script:
 
