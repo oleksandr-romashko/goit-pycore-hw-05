@@ -124,15 +124,15 @@ Once your virtual environment is set up, you can run task code.
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 1 - Calculate fibonacci number</h3></summary>
 
-#### Table of Contents
-- [Task Description](#task-description)
-- [Solution](#solution)
-- [Task Requirements](#task-requirements)
-- [Recommendations](#recommendations-to-the-implementation)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Usage Example](#usage-example)
+#### Table of Contents for the Assignment 1
+- [Task Description](#assignment-1-task-description)
+- [Solution](#assignment-1-solution)
+- [Task Requirements](#assignment-1-task-requirements)
+- [Recommendations](#assignment-1-recommendations-to-the-implementation)
+- [Evaluation Criteria](#assignment-1-evaluation-criteria)
+- [Usage Example](#assignment-1-usage-example)
 
-#### Task description:
+#### <a name="assignment-1-task-description"></a>Task description:
 
 **Closures** in programming are functions that retain references to variables from their lexical scope — that is, from the context in which they were declared.
 
@@ -144,7 +144,7 @@ In general, to compute the `n`-th Fibonacci number, the formula is: $F_n = F_{n�
 
 This task can be solved recursively, by calling a function that calculates Fibonacci numbers until it reaches the base cases `n = 0` or `n = 1`.
 
-#### Solution:
+#### <a name="assignment-1-solution"></a>Solution:
 
 Solution for this task is located in the following files:
 * [src/task_1/main.py](./src/task_1/main.py) - main entry point file.
@@ -164,14 +164,14 @@ Result screenshot - cache & no cache time comparation:
 
 ![task 1 cache no cache time compare screenshot](./assets/results/task_1_result_cache_no_cache_time_compare.png)
 
-#### Task requirements:
+#### <a name="assignment-1-task-requirements"></a>Task requirements:
 
 1. The `caching_fibonacci()` function must return an inner function `fibonacci(n)`.
 2. The `fibonacci(n)` function computes the `n`-th Fibonacci number. If the value is already cached, it should return the cached result.
 3. If the value is not in the cache, it should compute it, store it in the cache, and return the result.
 4. Use recursion to compute Fibonacci numbers.
 
-#### Recommendations to the implementation:
+#### <a name="assignment-1-recommendations-to-the-implementation"></a>Recommendations to the implementation:
 
 Below is the pseudocode to guide the implementation:
 
@@ -193,13 +193,13 @@ END FUNCTION
 
 The `caching_fibonacci` function creates an inner function `fibonacci` and a `cache` dictionary to store computed Fibonacci numbers. Each time `fibonacci(n)` is called, it first checks whether the `n`-th result is already stored in `cache`. If it is, it returns the cached result immediately, greatly reducing the number of recursive calls. If not, it computes the result recursively, stores it in the `cache`, and returns it. The `caching_fibonacci` function returns the `inner` fibonacci function, which can now be used to compute Fibonacci numbers efficiently using caching.
 
-#### Evaluation criteria:
+#### <a name="assignment-1-evaluation-criteria"></a>Evaluation criteria:
 
 1. Correct implementation of the `fibonacci(n)` function with cache usage.
 2. Efficient use of recursion and caching to optimize computation.
 3. Code clarity, including readability and use of comments.
 
-#### Usage example:
+#### <a name="assignment-1-usage-example"></a>Usage example:
 
 ```python
 # Get the fibonacci function
@@ -218,7 +218,7 @@ In this example, calling `fib(10)` or `fib(15)` will compute the corresponding F
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 2 - Calculate profit using numbers from text</h3></summary>
 
-#### Table of Contents for Assignment 2
+#### Table of Contents for the Assignment 2
 - [Task Description](#assignment-2-task-description)
 - [Solution](#assignment-2-solution)
 - [Task Requirements](#assignment-2-task-requirements)
@@ -280,16 +280,15 @@ Total income: 1351.46
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 3 - Log Analyzer CLI Tool</h3></summary>
 
-#### Table of Contents
-- [Task Description](#task-description)
-- [Solution](#solution)
-- [Task Requirements](#task-requirements)
-- [Recommendations](#recommendations-to-the-implementation)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Usage Example](#usage-example)
-- [Additional Features](#additional-features)
+#### Table of Contents for the Assignment 3
+- [Task Description](#assignment-3-task-description)
+- [Solution](#assignment-3-solution)
+- [Task Requirements](#assignment-3-task-requirements)
+- [Recommendations](#assignment-3-recommendations-to-the-implementation)
+- [Evaluation Criteria](#assignment-3-evaluation-criteria)
+- [Usage Example](#assignment-3-usage-example)
 
-#### Task description:
+#### <a name="assignment-3-task-description"></a>Task description:
 
 Develop a Python script for analyzing log files. The script should be able to read a log file provided as a command-line argument and display statistics based on log levels such as `INFO`, `ERROR`, `DEBUG`. The user can also specify a log level as the second command-line argument to get all records of that level.
 
@@ -310,7 +309,7 @@ To complete this task, use the following sample log file:
 2024-01-22 13:30:30 INFO Scheduled maintenance.
 ```
 
-#### Solution:
+#### <a name="assignment-3-solution"></a>Solution:
 
 Solution for this task is located in the following files:
 * [./src/task_3/main.py](./src/task_3/main.py) - main entry point file.
@@ -336,7 +335,7 @@ Result screenshot - unknown levels as issues:
 
 ![task 3 unknown levels as issues screenshot](./assets/results/task_3_unknown_levels_as_issues.png)
 
-#### Task requirements:
+#### <a name="assignment-3-task-requirements"></a>Task requirements:
 
 1. The script must accept the path to the log file as a command-line argument.
 2. The script must accept an optional second command-line argument, following the log file path. It should display all records of a specific log level. For example, the `error` argument should output all `ERROR` level records from the log file.
@@ -347,7 +346,7 @@ Result screenshot - unknown levels as issues:
 7. Implement the function `count_logs_by_level(logs: list) -> dict` for counting records by log level.
 8. The results should be displayed in a table showing the number of records for each level. For that, implement the function `display_log_counts(counts: dict)`, which formats and outputs the results. It takes the output from `count_logs_by_level` as input.
 
-#### Recommendations to the implementation:
+#### <a name="assignment-3-recommendations-to-the-implementation"></a>Recommendations to the implementation:
 
 1. Before you start, familiarize yourself with the structure of your log file. Pay attention to the date and time format, log levels like `INFO`, `ERROR`, `DEBUG`, `WARNING`, and the structure of messages.
 2. Understand how different parts of the log are separated — usually by spaces or special characters.
@@ -359,14 +358,14 @@ Result screenshot - unknown levels as issues:
 8. Displaying the results should be done using the function `display_log_counts(counts: dict)`, which formats and prints the count results in a readable form.
 9. Your script should be able to handle different types of errors, such as file not found or file reading errors. Use `try/except` blocks to handle exceptions gracefully.
 
-#### Evaluation criteria:
+#### <a name="assignment-3-evaluation-criteria"></a>Evaluation criteria:
 
 * The script fulfills all the listed requirements, correctly analyzes the log file, and outputs the relevant information.
 * The script properly handles errors such as incorrect log file format or missing file.
 * The implementation uses at least one functional programming element: lambda function, list comprehension, `filter` function, etc.
 * The code is well-structured, readable, and contains comments where necessary.
 
-#### Usage example:
+#### <a name="assignment-3-usage-example"></a>Usage example:
 
 When running the script:
 
