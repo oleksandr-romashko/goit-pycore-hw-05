@@ -322,19 +322,19 @@ Solution for this task is located in the following files:
 
 Result screenshot - default example:
 
-![](./assets/results/task_3_default_example.png)
+![Task 3 default screenshot](./assets/results/task_3_default_example.png)
 
 Result screenshot - filtered by level:
 
-![](./assets/results/task_3_filtered_by_level.png)
+![Task 3 filtered by level screenshot](./assets/results/task_3_filtered_by_level.png)
 
 Result screenshot - showing issues:
 
-![](./assets/results/task_3_showing_issues.png)
+![Task 3 showing issues screenshot](./assets/results/task_3_showing_issues.png)
 
 Result screenshot - unknown levels as issues:
 
-![](./assets/results/task_3_unknown_levels_as_issues.png)
+![Task 3 unknown levels as issues screenshot](./assets/results/task_3_unknown_levels_as_issues.png)
 
 #### Task requirements:
 
