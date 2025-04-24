@@ -154,15 +154,15 @@ Solution for this task is located in the following files:
 
 Result screenshot - no issues with default examples:
 
-<img style="display:block" align="left" src="./assets/results/task_1_result_no_issues_default_examples.png" title="task 1 screenshot no issues" alt="result screenshot">
+![](./assets/results/task_1_result_no_issues_default_examples.png)
 
 Result screenshot - no issues using argument value:
 
-<img style="display:block" align="left" src="./assets/results/task_1_result_no_issues_arg_value.png" title="task 1 screenshot no issues" alt="result screenshot">
+![](./assets/results/task_1_result_no_issues_arg_value.png)
 
 Result screenshot - cache & no cache time comparation:
 
-<img style="display:block" align="left" src="./assets/results/task_1_result_cache_no_cache_time_compare.png" title="task 1 screenshot no issues" alt="result screenshot">
+![](./assets/results/task_1_result_cache_no_cache_time_compare.png)
 
 #### Task requirements:
 
