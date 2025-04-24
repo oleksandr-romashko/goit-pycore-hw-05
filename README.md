@@ -154,15 +154,15 @@ Solution for this task is located in the following files:
 
 Result screenshot - no issues with default examples:
 
-![](./assets/results/task_1_result_no_issues_default_examples.png)
+![task 1 default example screenshot](./assets/results/task_1_result_no_issues_default_examples.png)
 
 Result screenshot - no issues using argument value:
 
-![](./assets/results/task_1_result_no_issues_arg_value.png)
+![task_1 result arg value screenshot](./assets/results/task_1_result_no_issues_arg_value.png)
 
 Result screenshot - cache & no cache time comparation:
 
-![](./assets/results/task_1_result_cache_no_cache_time_compare.png)
+![task 1 cache no cache time compare screenshot](./assets/results/task_1_result_cache_no_cache_time_compare.png)
 
 #### Task requirements:
 
@@ -241,7 +241,7 @@ Solution for this task is located in the following files:
 
 Result screenshot - no issues with default example:
 
-![](./assets/results/task_2_result_no_issues_default_examples.png)
+![task 2 default example screenshot](./assets/results/task_2_result_no_issues_default_examples.png)
 
 #### <a name="assignment-2-task-requirements"></a>Task requirements:
 
@@ -322,19 +322,19 @@ Solution for this task is located in the following files:
 
 Result screenshot - default example:
 
-![Task 3 default screenshot](./assets/results/task_3_default_example.png)
+![task 3 default screenshot](./assets/results/task_3_default_example.png)
 
 Result screenshot - filtered by level:
 
-![Task 3 filtered by level screenshot](./assets/results/task_3_filtered_by_level.png)
+![task 3 filtered by level screenshot](./assets/results/task_3_filtered_by_level.png)
 
 Result screenshot - showing issues:
 
-![Task 3 showing issues screenshot](./assets/results/task_3_showing_issues.png)
+![task 3 showing issues screenshot](./assets/results/task_3_showing_issues.png)
 
 Result screenshot - unknown levels as issues:
 
-![Task 3 unknown levels as issues screenshot](./assets/results/task_3_unknown_levels_as_issues.png)
+![task 3 unknown levels as issues screenshot](./assets/results/task_3_unknown_levels_as_issues.png)
 
 #### Task requirements:
 
