@@ -5,5 +5,6 @@
         "${workspaceFolder}/src/task_1",
         "${workspaceFolder}/src/task_2",
         "${workspaceFolder}/src/task_3",
+        "${workspaceFolder}/src/task_4",
     ]
 }
