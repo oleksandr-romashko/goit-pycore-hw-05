@@ -168,14 +168,19 @@ def main_alternative():
 
     menu = {
         "hello": {
-            "args_str": "",  # A string showing expected arguments in <command> (required argument)
+            # A string showing expected arguments help text
+            # in <command> (required argument)
             # or [command] (optional argument) format
-            # empty if none are required
-            "description": "Greet the user",  # A string describing what this command does
-            "validators": None,  # Optional: a tuple of functions to validate args,
-            #           or None if no validation is required
-            #           called in declaration order
-            "handler": lambda _, __: show_hello_message(),  # The function that handles this command after all validations
+            # or empty if none are required.
+            "args_str": "",
+            # A string describing what this command does
+            "description": "Greet the user",
+            # Optional: a tuple of functions to validate args,
+            # or None if no validation is required.
+            # Functions called in declaration order.
+            "validators": None,
+            # The function that handles this command after all validations
+            "handler": lambda _, __: show_hello_message(),
         },
         "add": {
             "args_str": "<username> <phone>",
@@ -203,9 +208,9 @@ def main_alternative():
             "description": "Show contact's phone number",
             "validators": (
                 validate_is_one_argument_username,
-                # Partial match is supported. Validation check if name is in
-                # the contacts (with partial match) postponed to the handler
-                # function
+                # Note: Partial match is supported. Validation check if name is
+                #       in the contacts (with partial match) postponed to the
+                #       handler function
             ),
             "handler": show_phone,
         },
