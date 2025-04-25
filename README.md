@@ -235,7 +235,7 @@ Also implement a function `sum_profit` that will use `generator_numbers` to sum 
 #### <a name="assignment-2-solution"></a>Solution:
 
 Solution for this task is located in the following files:
-* [./src/task_2/main.py](./src/task_2/main.py) - main entry point file.
+* [src/task_2/main.py](./src/task_2/main.py) - main entry point file.
 * [src/task_2/text_analyzer.py](./src/task_2/text_analyzer.py) - analyzes text for profit values.
 * [src/task_2/profit_calculator.py](./src/task_2/profit_calculator.py) - calculates profit.
 
@@ -312,28 +312,32 @@ To complete this task, use the following sample log file:
 #### <a name="assignment-3-solution"></a>Solution:
 
 Solution for this task is located in the following files:
-* [./src/task_3/main.py](./src/task_3/main.py) - main entry point file.
+* [src/task_3/main.py](./src/task_3/main.py) - main entry point file.
 
 ##### Additional Features:
 
 - `--show-issues`: Display malformed log entries or unknown formats.
 - `--issue-unknown-levels`: Treat unknown log levels as issues for analysis.
 
-Result screenshot - default example:
+Result screenshot - Show summary stats of all logs:
 
-![task 3 default screenshot](./assets/results/task_3_default_example.png)
+![task 3 show summary stats screenshot](./assets/results/task_3_show_summary_stats.png)
 
-Result screenshot - filtered by level:
+Result screenshot - Show only ERROR logs (filtered by level):
 
-![task 3 filtered by level screenshot](./assets/results/task_3_filtered_by_level.png)
+![task 3 filter by level screenshot](./assets/results/task_3_filtered_by_level.png)
 
-Result screenshot - showing issues:
+Result screenshot - Show all logs, plus lines with format issues:
 
-![task 3 showing issues screenshot](./assets/results/task_3_showing_issues.png)
+![task 3 show issues screenshot](./assets/results/task_3_show_issues.png)
 
-Result screenshot - unknown levels as issues:
+Result screenshot - Analyze normally, but treat unknown levels as issues:
 
 ![task 3 unknown levels as issues screenshot](./assets/results/task_3_unknown_levels_as_issues.png)
+
+Result screenshot - All Options Combined (filter to INFO, show issues, issue unknown levels):
+
+![task 3 combine level issues unknown levels screenshot](./assets/results/task_3_combine_level_issues_unknown_levels.png)
 
 #### <a name="assignment-3-task-requirements"></a>Task requirements:
 

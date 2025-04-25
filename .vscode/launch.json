@@ -1,0 +1,101 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Log file not found",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/no_such_file.log",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Path object is not a file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/decorators",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Empty log file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example_empty.log",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: No permissions for log file",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example_no_permissions.log",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Show summary stats of all logs",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example.log"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Filter by Level (error)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example.log",
+                "ERROR"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Show Issues",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example_with_errors.log",
+                "--issues"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: Analyze normally, but treat unknown levels as issues",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example_with_unknown_log_levels.log",
+                "--issue-unknown"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: All Options Combined (filter to INFO, show issues, issue unknown levels)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/task_3/main.py",
+            "args": [
+                "./src/task_3/example_with_errors.log",
+                "INFO",
+                "--issues",
+                "--issue-unknown"
+            ],
+            "console": "integratedTerminal"
+        },
+    ]
+}
