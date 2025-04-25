@@ -284,8 +284,10 @@ if __name__ == "__main__":
     try:
         # Choose solution approach
         if "--alternative" in sys.argv:
+            # Launch in the alternative mode (menu as a data structure)
             main_alternative()
         else:
+            # Launch in the typical mode (menu handling in match case)
             main()
     except KeyboardInterrupt:
         print(f"\n{EXIT_MESSAGE} (Interrupted by user)")

@@ -143,5 +143,23 @@
                 ],
                 "console": "integratedTerminal"
             },
+            {
+                "name": "Task 4: Launch in the typical mode (menu handling in match case)",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/src/task_4/main.py",
+                "args": [],
+                "console": "integratedTerminal"
+            },
+            {
+                "name": "Task 4: Launch in the alternative mode (menu as a data structure)",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/src/task_4/main.py",
+                "args": [
+                    "--alternative"
+                ],
+                "console": "integratedTerminal"
+            },
         ]
     }
