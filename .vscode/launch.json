@@ -40,6 +40,14 @@
                 "console": "integratedTerminal"
             },
             {
+                "name": "Task 2: Calculates the total income found in a given text",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/src/task_2/main.py",
+                "args": [],
+                "console": "integratedTerminal"
+            },
+            {
                 "name": "Task 3: Log file not found",
                 "type": "debugpy",
                 "request": "launch",
