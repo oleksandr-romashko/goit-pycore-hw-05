@@ -73,7 +73,7 @@ def validate_contacts_not_empty(_, contacts: dict) -> None:
     """Ensure there is at least one contact in the list."""
     if not contacts:
         raise ValueError(
-            "You don't have any contacts yet, " "but you can add one anytime."
+            "You don't have any contacts yet, but you can add one anytime."
         )
 
 

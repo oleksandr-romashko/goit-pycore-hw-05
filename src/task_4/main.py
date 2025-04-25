@@ -15,7 +15,7 @@ from utils.constants import (
     EXIT_MESSAGE,
 )
 from utils.input_parser import parse_input
-from contacts.contacts_validator import (
+from validators.contact_validators import (
     validate_are_two_arguments,
     validate_is_one_argument_username,
     validate_contact_not_in_contacts,
@@ -24,7 +24,7 @@ from contacts.contacts_validator import (
     validate_not_phone_duplicate,
     validate_contacts_not_empty,
 )
-from contacts.contacts_handler import add_contact, change_contact, show_phone, show_all
+from contacts.contacts_manager import add_contact, change_contact, show_phone, show_all
 
 # Initialize colorama for Windows compatibility
 init(autoreset=True)
