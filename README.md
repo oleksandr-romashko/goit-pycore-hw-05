@@ -85,16 +85,48 @@ Once your virtual environment is set up, you can run task code.
 
   VS Code will automatically use the virtual environment and set the correct `PYTHONPATH` if you've configured your settings properly.
 
+  You can launch each task with preconfigured inputs via the debugger (.vscode/launch.json).
+
+  Below is a mapping of launch configurations to their command-line equivalents. You can run them directly or through provided scripts:
+
 * **<a name="setup-running-command-line"></a>Running the Tasks from the Command Line**
 
   After setting up your virtual environment and setting the `PYTHONPATH`, you can run the tasks directly from the terminal.
 
   Each of these commands will run the corresponding task script (please note, that for Linux/macOS you might use `python3` instead of `python` command):
 
-  Run task 1:
+  Task 1: Print Fibonacci numbers:
 
   ```bash
-  python src/task_1/main.py [N]
+  python src/task_1/main.py
+  or
+  python src/task_1/main.py 20
+  ```
+
+  Task 2 - Total Income from Tex:
+
+  ```bash
+  python src/task_2/main.py
+  ```
+
+  Task 3 - Log Analyzer:
+  ```bash
+  python src/task_3/main.py ./src/task_3/example.log
+  or
+  python src/task_3/main.py ./src/task_3/example.log ERROR
+  or
+  python src/task_3/main.py ./src/task_3/example_with_errors.log --issues
+  or
+  python src/task_3/main.py ./src/task_3/example_with_unknown_log_levels.log --issue-unknown
+  or
+  python src/task_3/main.py ./src/task_3/example_with_errors.log INFO --issues --issue-unknown
+  ```
+
+  Task 4 - Command Handler Bot:
+  ```bash
+  python src/task_4/main.py
+  or
+  python src/task_4/main.py --alternative
   ```
 
 * **<a name="setup-running-script"></a>Alternatively, you can use a script to run the tasks** (apply respective task number and arguments to run respective task script):
@@ -115,7 +147,7 @@ Once your virtual environment is set up, you can run task code.
   * **On Windows (batch script)**:
 
     ```cmd
-    src\task_1\run_task_1.bat
+    src\task_1\run_task_1.bat [N]
     ```
 
 </details>
@@ -407,6 +439,111 @@ This will print the overall statistics by level, and also detailed info for all 
 Log details for level 'ERROR':
 2024-01-22 09:00:45 - Database connection failed.
 2024-01-22 11:30:15 - Backup process failed.
+```
+
+</details>
+
+<details>
+
+<summary><h3 style="display: inline-block; word-break: break-all;">Assignment 4 - Add Error Handling to the Console Assistant Bot</h3></summary>
+
+This task if follow-up of the previous task **[CLI assistant bot](https://github.com/oleksandr-romashko/goit-pycore-hw-04/blob/main/README.md#user-content-solution-3)**, extended by adding error handling using decorators.
+
+#### Table of Contents for the Assignment 4
+- [Task Description](#assignment-4-task-description)
+- [Solution](#assignment-4-solution)
+- [Task Requirements](#assignment-4-task-requirements)
+- [Recommendations](#assignment-4-recommendations-to-the-implementation)
+- [Evaluation Criteria](#assignment-4-evaluation-criteria)
+- [Usage Example according to the Task](#assignment-4-usage-example)
+
+#### <a name="assignment-4-task-description"></a>Task description:
+
+Extend [your console assistant bot](https://github.com/oleksandr-romashko/goit-pycore-hw-04/blob/main/README.md#user-content-solution-3) and add error handling using decorators.
+
+#### <a name="assignment-4-solution"></a>Solution:
+
+Solution for this task is located in the following files:
+* [src/task_4/main.py](./src/task_4/main.py) - main entry point file.
+* [src/task_4/decorators/input_error.py](./src/task_4/decorators/input_error.py) - decorator to handle input errors
+* [src/task_4/handlers/command_handlers.py](./src/task_4/handlers/command_handlers.py) - decorated handling functions
+
+Result screenshot - Task solution (launched in the typical mode (menu handling in match case):
+
+![task 4 typical solution screenshot](./assets/results/task_4_typical_solution.png)
+
+Result screenshot - Task solution (Launched in the alternative mode (Data-Driven Menu):
+
+![task 4 alternative solution screenshot](./assets/results/task_4_alternative_solution.png)
+
+#### <a name="assignment-4-task-requirements"></a>Task requirements:
+
+1. All user input errors must be handled by a decorator named `input_error`.
+This decorator is responsible for returning helpful messages like:
+   * "Enter user name"
+   * "Give me name and phone please"
+   * etc.
+2. The `input_error` decorator should handle exceptions that occur in command `handler` functions, specifically:
+   * KeyError
+   * ValueError
+   * IndexError
+  When such an exception occurs, the decorator must return an appropriate error message without terminating the program.
+
+#### <a name="assignment-4-recommendations-to-the-implementation"></a>Recommendations to the implementation:
+
+As an example, a basic `input_error` decorator that handles `ValueError`:
+
+```python
+def input_error(func):
+    def inner(*args, **kwargs):
+        try:
+            return func(*args, **kwargs)
+        except ValueError:
+            return "Give me name and phone please."
+
+    return inner
+```
+
+You can then apply this decorator to your `add_contact` command functions ho handle `ValueError`, like so:
+
+```python
+@input_error
+def add_contact(args, contacts):
+    name, phone = args
+    contacts[name] = phone
+    return "Contact added."
+```
+
+Your task is to:
+* Add similar decorators to other command handler functions.
+* Extend the decorator to handle other errors with specific messages.
+
+#### <a name="assignment-4-evaluation-criteria"></a>Evaluation criteria:
+
+1. Implemented an `input_error` decorator that handles user input errors for all commands.
+2. Your decorator handles the following exceptions using `input_error`:
+  * KeyError
+  * ValueError
+  * IndexError
+3. Each command-handling function is wrapped with the `input_error` decorator.
+4. The bot responds properly to various commands, and input errors are gracefully handled without stopping the program.
+
+#### <a name="assignment-4-usage-example"></a>Usage example according to the Task:
+
+The bot should behave like this when running:
+
+```bash
+Enter a command: add
+Enter the argument for the command
+Enter a command: add Bob
+Enter the argument for the command
+Enter a command: add Jime 0501234356
+Contact added.
+Enter a command: phone
+Enter the argument for the command
+Enter a command: all
+Jime: 0501234356
+Enter a command:
 ```
 
 </details>
