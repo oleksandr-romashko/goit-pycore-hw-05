@@ -25,7 +25,7 @@ Example Usage:
 
     Display potential issues in the log file, such as unknown levels or
     malformed entries:
-        python main.py logs.txt --show-issues
+        python main.py logs.txt --issues
 
     Consider unknown log levels as issues during analysis:
         python main.py logs.txt --issue-unknown-levels
