@@ -447,7 +447,7 @@ Log details for level 'ERROR':
 
 <summary><h3 style="display: inline-block; word-break: break-all;">Assignment 4 - Add Error Handling to the Console Assistant Bot</h3></summary>
 
-This task if follow-up of the previous task **[CLI assistant bot](https://github.com/oleksandr-romashko/goit-pycore-hw-04/blob/main/README.md#user-content-solution-3)**, extended by adding error handling using decorators.
+This task is a follow-up of the previous task **[CLI assistant bot](https://github.com/oleksandr-romashko/goit-pycore-hw-04)**, extended by adding error handling using decorators.
 
 #### Table of Contents for the Assignment 4
 - [Task Description](#assignment-4-task-description)
