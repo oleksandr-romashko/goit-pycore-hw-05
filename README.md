@@ -135,19 +135,19 @@ Once your virtual environment is set up, you can run task code.
 
     Run task 1 with the script:
     ```bash
-    ./src/task_1/run_task_1.sh [N]
+    ./run_task_1.sh [N]
     ```
 
     Make sure the shell scripts have execution permission by running:
 
     ```bash
-    chmod +x src/task_1/run_task_1.sh
+    chmod +x ./run_task_1.sh
     ```
 
   * **On Windows (batch script)**:
 
     ```cmd
-    src\task_1\run_task_1.bat [N]
+    run_task_1.bat [N]
     ```
 
 </details>
